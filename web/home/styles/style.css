@@ -1,178 +1,89 @@
 /* Importing Open Sans font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Minecraft-regular";
+  src: url("../fonts/minecraft_font.ttf") format("truetype"), url("../fonts/minecraft_font.woff") format("woff");
+}
 /* General styling */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif; /* Setting default font */
+  font-family: "Minecraft-regular"; /* Setting default font */
 }
 
 /* Styling for headings and paragraphs */
-h1, h2, p {
+h1, h2, h3, p {
   color: white;
 }
 
-.container__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
-
-.title {
-  margin-right: 15rem;
+body {
+  background-image: url(https://i.redd.it/ujea79c0p7p01.png);
+  background-repeat: repeat;
 }
 
 .subtitle {
   font-style: italic;
   font-size: 18px;
-  margin-left: 15rem;
-}
-
-/* Page container styling */
-.container__page {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0px 5rem;
-  background: #000000; /* Background color */
-}
-
-/* Styling for information container */
-.container--info {
-  display: flex;
 }
 
 /* Styling for header/navigation */
 header {
   background: #000000;
-  border-bottom: 3px solid rgba(128, 128, 128, 0.6); /* Border bottom with rgba color */
-  position: relative;
+  border-bottom: 0.2rem solid rgba(128, 128, 128, 0.6); /* Border bottom with rgba color */
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
-  /* Logo styling */
   /* Logo and menu item styling */
 }
-.nav-logo--img {
-  padding: 10px;
-  width: 10rem;
-}
 .nav-logo, .nav-menu {
-  display: flex;
-  align-items: center;
   list-style: none;
   /* Styling for list items, lists, and links */
-  /* Adjustments for list */
-  /* Text and link margin adjustments */
-  /* Logo image size */
-  /* Styling for individual menu items */
   /* Positioning for links */
 }
 .nav-logo__item, .nav-logo__list, .nav-logo__link, .nav-menu__item, .nav-menu__list, .nav-menu__link {
-  display: flex;
-  align-items: center;
   text-decoration: none;
   color: white;
 }
-.nav-logo__img, .nav-menu__img {
-  width: 92px;
-  height: 32px;
-}
-.nav-logo__item, .nav-menu__item {
-  margin-left: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding: 10px;
-}
-.nav-logo__link:hover, .nav-menu__link:hover {
-  background-color: #f0c252;
-  padding: 1rem;
-  border-radius: 20px;
+.nav-logo__item:hover, .nav-menu__item:hover {
+  background: linear-gradient(127deg, #f05454, #f09f52, #f0c252, #78f052, #52bcf0, #9552f0, #f052b2); /* Gradient background */
+  background-size: 1400% 1400%; /* Background size */ /* Animation */ /* Animation */ /* Animation */
+  animation: rainbow 8s ease infinite; /* Animation */
+  border-radius: 1.25rem;
 }
 
 /* Main container styling */
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 8px;
-  background-color: #092734; /* Background color */
-  color: aliceblue; /* Text color */
-  box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgba(255, 255, 255, 0.571); /* Box shadow */
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.5rem 0 rgb(255, 255, 255), 0 6px 20px 0 rgba(255, 255, 255, 0.571); /* Box shadow */
   z-index: 2; /* Stack order */
-  background-image: url(https://i.pinimg.com/originals/83/03/69/8303699ed2a6fe8dd0c19b5bff7d6b5e.jpg); /* Background image */
-  background-repeat: repeat; /* Background repeat */
+  background-image: url(../images/yw.jpg);
+  background-repeat: repeat;
+  background-color: yellow; /* Set a background color to blend with the image */
   /* Border styling */
-  /* Info container styling */
 }
 .container__border {
-  padding: 0.2em;
-  margin: 0;
-  border-radius: 8px;
-  z-index: 1; /* Stack order */
-  width: 10rem;
-  height: auto;
+  border-radius: 0.5rem;
 }
-.container--info {
-  padding: 2em;
-  margin: 10em;
-}
-
-/* Styling for boxes */
-.box {
-  padding: 2rem;
-  margin: 2rem;
-}
-
-/* Image styling */
-img {
-  width: 400px;
+.container__heading, .container__description, .container__img-text {
+  color: #000;
 }
 
 /* Styling for social media container */
 .container--social {
-  /* List styling */
-  /* Social media image size */
   /* Social media item styling */
-  /* Styling for figure and links */
   /* Link styling */
   /* Hover effect */
 }
-.container--social__list {
-  display: block;
-}
-.container--social__img {
-  width: 4rem;
-}
 .container--social__item {
   list-style: none;
-  display: flex;
-  padding: 2rem;
   background-color: rgb(255, 255, 255);
-  margin: 2rem;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 8px;
-  color: aliceblue;
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.84), 0 6px 20px 0 rgba(255, 255, 255, 0.97); /* Box shadow */
-  z-index: 2; /* Stack order */
-}
-.container--social__figure, .container--social__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0.5rem 0 rgba(255, 255, 255, 0.84), 0 6px 20px 0 rgba(255, 255, 255, 0.97); /* Box shadow */
+  z-index: 2;
 }
 .container--social__link {
-  display: block;
-  border-radius: 8px;
-  margin-left: 20px;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -194,4 +105,10 @@ img {
   100% {
     background-position: 0% 76%;
   }
+}
+.footer {
+  background-color: black;
+}
+.footer__link {
+  color: yellow;
 }/*# sourceMappingURL=style.css.map */

@@ -3,113 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <title>Erik Web</title>
+    <link rel="stylesheet" href="styles/Layout.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
+<!--header seksjon-->
+  <header id="header">
+
+    <!--navigasjonsbaren-->
     <nav class="nav">
+      <!--navigasjons logo-->
       <div class="nav-logo">
-        <a href="header" class="nav-logo">
-          <img class="nav-logo--img"src="images/molt-smp-logo.webp" id="fireflame" alt="">
+        <a href="#header" class="nav-logo">
+          <img class="nav-logo--img"src="images/molt-smp-logo.webp" alt="Image of the moltsmp logo">
         </a>
       </div>
 
+      <!--navigasjons menu-->
       <div class="nav-menu">
         <ul class="nav-menu__list">
           <li class="nav-menu__item">
-            <a href="" class="nav-menu__link">
+            <a href="#projects" class="nav-menu__link">
               <span class="nav-menu__text">Projects</span>
             </a>
           </li>
           
           <li class="nav-menu__item">
-            <a href="" class="nav-menu__link">
+            <a href="#events" class="nav-menu__link">
               <span class="nav-menu__text">EVENTS</span>
             </a>
           </li>
 
           <li class="nav-menu__item">
-            <a href="" class="nav-menu__link">
+            <a href="#updates" class="nav-menu__link">
               <span class="nav-menu__text">Updates</span>
             </a>
           </li>
 
           <li class="nav-menu__item">
-            <a href="" class="nav-menu__link">
+            <a href="#footer" class="nav-menu__link">
               <span class="nav-menu__text">Contact</span>
             </a>
           </li>
-
         </ul>
       </nav>
-    </header>
+      <!-- Slutt på navigasjonsbaren-->
 
-    <div class="container__page">
+    </header>
+<!-- Slutten av header og navigasjonsbaren -->
+
+
+<!-- Intro seksjon -->
+    <div class="container--welcome">
       <div class="container__title">
         <h1 class="title">Welcome to The MOLT SMP website!</h1>
         <h2 class="subtitle">A server for memes and fun</h2>
       </div>
+<!-- Slutten av Intro seksjon -->
 
-      <main class="container--info">
+
+<!-- Hoved seksjon -->
+<main class="container--info">
+
+  <!-- "What is molt smp?" seksjon -->
+    <article class="box">
+      <h2 class="box__header">What is Molt SMP?</h2>
+      <p class="box__text"> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate 
+        deleniti ab aliquid accusantium voluptatibus laudantium ipsum recusandae 
+        beatae doloremque esse voluptate autem dicta vel numquam quos et blanditiis,
+        quasi quam?
+      </p>
+    </article>
+  <!-- Slutten av "What is molt smp?" seksjon -->
+
+    
+  <!-- Socials seksjon -->
+    <section class="container--social">
+      <ul class="container--social__list">
+        <li class="container--social__item">
+          <img class="container--social__img" src="images/tiktok.png" alt="tiktok">
+          <a class="container--social__link" href="https://www.tiktok.com/@officialdemonneo?is_from_webapp=1&sender_device=pc">Check out our TikTok for updates!!</a>
+        </li>
         
-          <article class="box">
-            <h2 class="box__header">What is Molt SMP?</h2>
-            <p class="box__text"> 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate 
-              deleniti ab aliquid accusantium voluptatibus laudantium ipsum recusandae 
-              beatae doloremque esse voluptate autem dicta vel numquam quos et blanditiis,
-              quasi quam?
-            </p>
-          </article>
-        
-        <div class="container--social">
-          <img src="images/placeholder img.png" alt="">
+        <li class="container--social__item">
+          <img class="container--social__img" src="images/discord-round-color-icon.svg" alt="moltsmp logo">
+          <a class="container--social__link" href="">Join my Discord for the server!</a>
+        </li>
+      </ul>
+    </section>
+  <!-- Slutten av socials seksjon -->
+
+  <!-- Events seksjon -->
+    <section class="container__border">
+      <h2 class="container__title" id="events">Events</h2>
+      <article class="container">
+        <div class="container__figure">
+          <img class="container__img" src="images/placeholder img.png" alt="img">
+          <p class="container__img-text">Bilde tekst</p>
         </div>
-      </main>
-
-        <ul class="container--social__list">
-          <li class="container--social__item">
-            <img class="container--social__img" src="images/discord-round-color-icon.svg" alt="discord">
-            <a class="container--social__link" href="">Add me on Discord!</a>
-          </li>
-          
-          <li class="container--social__item">
-            <img class="container--social__img" src="images/tiktok.png" alt="tiktok">
-            <a class="container--social__link" href="https://www.tiktok.com/@officialdemonneo?is_from_webapp=1&sender_device=pc">Check out my TikTok for updates!!</a>
-          </li>
-          
-          <li class="container--social__item">
-            <img class="container--social__img" src="images/molt-smp-logo.webp" alt="moltsmp logo">
-            <a class="container--social__link" href="">Join my Minecraft server Discord!</a>
-          </li>
-        </ul>
         
+        <div class="container__info">
+          <h2 class="container__heading">Overskrift</h2>
+          <p class="container__description">
+            bla bla bla bla, linus er kul bla bla bla bla
+            bla bla bla bla  bla bla bla blabla bla bla bla
+            bla bla bla blabla bla bla blabla bla bla blabla 
+            bla bla bla
+          </p>
+          
+          <a class="container__link" href="">Link til hva enn du vill</a>
+        </div>
+      </article>
+    </section>
+  <!-- Slutten av Events seksjon -->
+  
+
+  <!-- Updates seksjon -->
+    <section class="container__border">
+      <h2 class="container__title" id="updates">Updates</h2>
+      <article class="container">
+        <div class="container__figure">
+          <img class="container__img" src="images/placeholder img.png" alt="img">
+          <p class="container__img-text">Bilde tekst</p>
+        </div>
         
-        <div class="container__border">
-          <article class="container">
-              
-              <div class="container__figure">
-                <img class="container__img" src="images/placeholder img.png" alt="img">
-                <p class="container__img-text">Bilde tekst</p>
-              </div>
-              
-              <div>
-                <h2 class="container__heading">Overskrift</h2>
-                <p class="container__descript">
-                  bla bla bla bla, linus er kul bla bla bla bla
-                  bla bla bla bla  bla bla bla blabla bla bla bla
-                  bla bla bla blabla bla bla blabla bla bla blabla 
-                  bla bla bla
-                </p>
-                
-                <a class="container__link" href="">Link til hva enn du vill</a>
-              </div>
-            </article>
-          </div>
-      </div>
+        <div class="container__info">
+          <h2 class="container__heading">Overskrift</h2>
+          <p class="container__description">
+            bla bla bla bla, linus er kul bla bla bla bla
+            bla bla bla bla  bla bla bla blabla bla bla bla
+            bla bla bla blabla bla bla blabla bla bla blabla 
+            bla bla bla
+          </p>
+          
+          <a class="container__link" href="">Link til hva enn du vill</a>
+        </div>
+      </article>
 
-  </div>
-</div>
+      <h3 class="container__title">Updates 1</h2>
+      <article class="container">
+        <div class="container__figure">
+          <img class="container__img" src="images/placeholder img.png" alt="img">
+          <p class="container__img-text">Bilde tekst</p>
+        </div>
+        
+        <div class="container__info">
+          <h2 class="container__heading">Overskrift</h2>
+          <p class="container__description">
+            bla bla bla bla, linus er kul bla bla bla bla
+            bla bla bla bla  bla bla bla blabla bla bla bla
+            bla bla bla blabla bla bla blabla bla bla blabla 
+            bla bla bla
+          </p>
+          
+          <a class="container__link" href="">Link til hva enn du vill</a>
+        </div>
+      </article>
+    </section>
+  <!-- Slutten av Updates seksjon -->
 
+  <!-- Projects seksjon -->
+    <section class="container__border">
+      <h2 class="container__title" id="projects">Projects</h2>
+      <article class="container">
+        <div class="container__figure">
+          <img class="container__img" src="images/placeholder img.png" alt="img">
+          <p class="container__img-text">Bilde tekst</p>
+        </div>
+        
+        <div class="container__info">
+          <h2 class="container__heading">Overskrift</h2>
+          <p class="container__description">
+            bla bla bla bla, linus er kul bla bla bla bla
+            bla bla bla bla  bla bla bla blabla bla bla bla
+            bla bla bla blabla bla bla blabla bla bla blabla 
+            bla bla bla
+          </p>
+          
+          <a class="container__link" href="">Link til hva enn du vill</a>
+        </div>
+      </article>
+    </section>
+  <!-- Slutten av Projects seksjon -->
+</main>
+<!-- Slutten av Hoved seksjon -->
+
+<!-- contact seksjon -->
+  <footer id="footer" class="footer">
+      <a class="footer__link" href="mailto:moltsmp@gmail.com@ntnu.no">
+        <span>Send us a mail here!</span>
+      </a>
+      <p>we would love to here what you would want, on the server!</p>
+  </footer>
+<!--Slutten av contact seksjon -->
 </body>
 </html>

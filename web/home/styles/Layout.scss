@@ -1,0 +1,211 @@
+/* Importere Open Sans font fra Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+/* Hovedcontainer for tittel og tekst */
+.container__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    .title {
+        margin-right: 10rem;
+    }
+
+    .subtitle {
+        margin-left: 10rem;
+    }
+}
+
+/* Sentrer innholdet på siden */
+.container__page {
+    margin: 0 auto;
+    padding: 0 5rem;
+    max-width: 90%;
+}
+
+/* Fleksibel layout for informasjonselementer */
+.container--info {
+    display: flex;
+    flex-direction: column; 
+    padding: 2rem;
+}
+
+/* Header og navigasjonsstiler */
+header {
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &-logo--img {
+        padding: 0.5rem;
+        width: 8rem;
+    }
+
+    &-logo,
+    &-menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+
+        &__item {
+            margin-left: 2rem;
+            padding: 0.5rem 1rem;
+            display: flex;
+            list-style: none;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+        }
+
+        &__img {
+            width: 5.75rem;
+            height: auto;
+        }
+    }
+}
+
+/* Hovedcontaineren for layout og justering */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+
+    &__figure{
+        padding: 2rem;
+    }
+
+    &__border {
+        padding: 0.2rem;
+        margin: 0;
+        border-radius: 0.5rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        width: 23rem;
+    }
+
+    &__link{
+        margin-top: 2rem;
+    }
+}
+
+/* Stiler for bokser */
+.box {
+    padding: 2rem;
+    margin: 2rem;
+    max-width: 100%; 
+}
+
+
+/* Sosiale medier container-stiler */
+.container--social {
+    margin-bottom: 7rem;
+    
+    &__img {
+        width: 100%;
+        max-width: 7rem;
+        margin: 1rem;
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap; /* Tillater brytning på små skjermer */
+        justify-content: center;
+    }
+
+    &__item {
+        list-style: none;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: calc(33.33% - 2rem);
+        min-width: 23rem;
+        max-width: 25rem;
+
+        &:hover {
+            background: linear-gradient(127deg, #f05454, #f09f52, #f0c252, #78f052, #52bcf0, #9552f0, #f052b2);
+            background-size: 1400% 1400%;
+            animation: rainbow 8s ease infinite;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    padding: 5rem;
+
+    &__link {
+        margin: 1rem;
+    }
+}
+
+/* Rgb animasjon */
+@keyframes rainbow {
+    0% {
+        background-position: 0% 76%;
+    }
+    50% {
+        background-position: 100% 25%;
+    }
+    100% {
+        background-position: 0% 76%;
+    }
+}
+
+/* Media queries for bedre responsivitet */
+@media (max-width: 768px) {
+    .container__page {
+        padding: 0 2rem;
+    }
+
+    .nav-menu__item {
+        margin-left: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .container--social__item {
+        flex-basis: calc(50% - 2rem); /* Endrer bredde for mindre skjermer */
+    }
+}
+
+@media (max-width: 480px) {
+    .container--social__item {
+        flex-basis: calc(100% - 2rem); /* Tar full bredde på små skjermer */
+    }
+}
